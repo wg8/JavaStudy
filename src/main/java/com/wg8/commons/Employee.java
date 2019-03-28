@@ -1,21 +1,21 @@
-package com.wg8.predicate;
+package com.wg8.commons;
 
 /**
  * @Author Harry
  * @Date 2019/3/27
  * @Description
  */
-public class Level {
+public class Employee {
 
     private String name;
-    private String level;
+    private double salary;
 
-    public Level() {
+    public Employee() {
     }
 
-    public Level(String name, String level) {
+    public Employee(String name, double salary) {
         this.name = name;
-        this.level = level;
+        this.salary = salary;
     }
 
     public String getName() {
@@ -26,19 +26,19 @@ public class Level {
         this.name = name;
     }
 
-    public String getLevel() {
-        return level;
+    public double getSalary() {
+        return salary;
     }
 
-    public void setLevel(String level) {
-        this.level = level;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     @Override
     public String toString() {
-        return "Level{" +
+        return "Employee{" +
                 "name='" + name + '\'' +
-                ", level='" + level + '\'' +
+                ", salary=" + salary +
                 '}';
     }
 }

@@ -1,9 +1,8 @@
-package com.wg8.predicate;
+package com.wg8.commons;
 
 import org.apache.commons.collections4.IterableMap;
 import org.apache.commons.collections4.MapIterator;
 import org.apache.commons.collections4.Predicate;
-import org.apache.commons.collections4.functors.UniquePredicate;
 import org.apache.commons.collections4.iterators.ArrayListIterator;
 import org.apache.commons.collections4.iterators.FilterIterator;
 import org.apache.commons.collections4.iterators.LoopingIterator;

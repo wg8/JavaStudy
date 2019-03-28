@@ -1,4 +1,4 @@
-package com.wg8.predicate;
+package com.wg8.commons;
 
 /**
  * @Author Harry
