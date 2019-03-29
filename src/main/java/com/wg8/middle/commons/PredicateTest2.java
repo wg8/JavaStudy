@@ -1,4 +1,4 @@
-package com.wg8.commons;
+package com.wg8.middle.commons;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.Predicate;

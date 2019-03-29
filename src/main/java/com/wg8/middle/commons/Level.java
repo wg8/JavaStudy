@@ -1,4 +1,4 @@
-package com.wg8.commons;
+package com.wg8.middle.commons;
 
 /**
  * @Author Harry

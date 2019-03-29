@@ -1,4 +1,4 @@
-package com.wg8.enumeration;
+package com.wg8.middle.enumeration;
 
 import java.util.Enumeration;
 import java.util.StringTokenizer;
