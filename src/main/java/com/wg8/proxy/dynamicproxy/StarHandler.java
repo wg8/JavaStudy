@@ -25,8 +25,6 @@ public class StarHandler implements InvocationHandler {
 
         if ("sing".equals(method.getName())) {
             object = method.invoke(realStar, args);
-        } else {
-            m
         }
 
         System.out.println("真正的方法执行后！");
