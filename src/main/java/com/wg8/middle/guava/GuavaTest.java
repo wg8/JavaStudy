@@ -1,4 +1,4 @@
-package com.wg8.guava;
+package com.wg8.middle.guava;
 
 import com.google.common.base.Function;
 import com.google.common.base.Functions;
