@@ -13,4 +13,4 @@
  * 可以通过 invoke 方法实现对真实角色的代理访问
  * 每次通过 Proxy 生成代理类对象对象时都要指定对应的处理器对象
  */
-package com.wg8.proxy.dynamicproxy;
+package com.wg8.gof23.proxy.dynamicproxy;

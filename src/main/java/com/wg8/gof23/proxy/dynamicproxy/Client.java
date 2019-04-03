@@ -1,4 +1,4 @@
-package com.wg8.proxy.dynamicproxy;
+package com.wg8.gof23.proxy.dynamicproxy;
 
 import java.lang.reflect.Proxy;
 

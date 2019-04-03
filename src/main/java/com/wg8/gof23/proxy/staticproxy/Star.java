@@ -1,4 +1,4 @@
-package com.wg8.proxy.dynamicproxy;
+package com.wg8.gof23.proxy.staticproxy;
 
 /**
  * @author Harry
