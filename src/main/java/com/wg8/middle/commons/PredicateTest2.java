@@ -30,6 +30,7 @@ public class PredicateTest2 {
 
         // 类型转换器
         Transformer<Long, String> trans = new Transformer<Long, String>() {
+            @Override
             public String transform(Long input) {
                 return new SimpleDateFormat("yyyy年MM月dd日").format(input);
             }
@@ -50,11 +51,13 @@ public class PredicateTest2 {
     private static void selfTest() {
         // 判别式
         Predicate<Employee> isLow = new Predicate<Employee>() {
+            @Override
             public boolean evaluate(Employee employee) {
                 return employee.getSalary() < 10000;
             }
         };
         Predicate<Employee> isHigh = new Predicate<Employee>() {
+            @Override
             public boolean evaluate(Employee employee) {
                 return employee.getSalary() >= 10000;
             }
@@ -63,11 +66,13 @@ public class PredicateTest2 {
 
         // 转换
         Transformer<Employee, Level> lowTrans = new Transformer<Employee, Level>() {
+            @Override
             public Level transform(Employee input) {
                 return new Level(input.getName(), "穷");
             }
         };
         Transformer<Employee, Level> highTrans = new Transformer<Employee, Level>() {
+            @Override
             public Level transform(Employee input) {
                 return new Level(input.getName(), "富");
             }
@@ -102,11 +107,13 @@ public class PredicateTest2 {
 
         // 判别式
         Predicate<Person> isGood = new Predicate<Person>() {
+            @Override
             public boolean evaluate(Person person) {
                 return person.getScore() >= 60;
             }
         };
         Predicate<Person> notGood = new Predicate<Person>() {
+            @Override
             public boolean evaluate(Person person) {
                 return person.getScore() < 60;
             }
@@ -115,11 +122,13 @@ public class PredicateTest2 {
 
         // 转换式
         Transformer<Person, ScoreLevel> isGoodTran = new Transformer<Person, ScoreLevel>() {
+            @Override
             public ScoreLevel transform(Person person) {
                 return new ScoreLevel(person.getName(), "合格");
             }
         };
         Transformer<Person, ScoreLevel> notGoodTran = new Transformer<Person, ScoreLevel>() {
+            @Override
             public ScoreLevel transform(Person person) {
                 return new ScoreLevel(person.getName(), "不合格");
             }
